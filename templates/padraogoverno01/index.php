@@ -97,11 +97,12 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
                 <!-- fim .row-fluid -->
                 <div class="row-fluid">
                     <div id="logo" class="span8<?php if($this->params->get('classe_nome_principal', '') != '') echo ' '.$this->params->get('classe_nome_principal'); ?>">
-                        <a href="<?php echo JURI::root(); ?>" title="<?php echo $this->params->get('nome_principal', 'Nome principal'); ?>">
+                    <!--    <a href="<?php echo JURI::root(); ?>" title="<?php echo $this->params->get('nome_principal', 'Nome principal'); ?>">
                             <span class="portal-title-1"><?php echo $this->params->get('denominacao', ''); ?></span>
                             <h1 class="portal-title corto"><?php echo $this->params->get('nome_principal', 'Nome principal'); ?></h1>
                             <span class="portal-description"><?php echo $this->params->get('subordinacao', ''); ?></span>
-                        </a>
+                        </a> -->
+                     <a href="<?php echo JURI::root(); ?>" class=""><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logo.png" ></a>       
                     </div>
                     <!-- fim .span8 -->
                     <div class="span4">
